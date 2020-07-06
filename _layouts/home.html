@@ -14,7 +14,9 @@ published: true
 {% endif %}
 
 {% for post in posts %}
-  <img src="{{ post.thumbnail }}" style="height: 280px" align="center" />
+  {% if post.thumbnail %}
+  	<img src="{{ post.thumbnail }}" style="height: 280px" align="center" />
+  {% endif %}
   {% include archive-single.html %}
 {% endfor %}
 
