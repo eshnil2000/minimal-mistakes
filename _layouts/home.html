@@ -1,5 +1,6 @@
 ---
 layout: archive
+published: true
 ---
 
 {{ content }}
@@ -13,6 +14,7 @@ layout: archive
 {% endif %}
 
 {% for post in posts %}
+  <img src="{{ post.thumbnail }}" style="height: 280px" align="center" />
   {% include archive-single.html %}
 {% endfor %}
 
